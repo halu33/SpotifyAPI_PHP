@@ -35,3 +35,15 @@ define('SPOTIFY_SCOPES', serialize([
 `spotify.php`
 
 アクセストークンを受け取り、現在再生中の曲情報を返す関数
+
+Composerを使用してライブラリのインストールが必要です。
+
+作業ディレクトリで以下のコマンドを実行してください。
+
+```
+composer require jwilsson/spotify-web-api-php
+```
+
+vendorというフォルダが作成されます。APIの認証を行うファイルでは`vendor/autoload.php`を読み込む必要があります。
+
+[公式ドキュメント](https://developer.spotify.com/documentation/web-api)
